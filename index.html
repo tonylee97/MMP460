@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TONY LEE</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <div class="content">
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#pic2">Work</a></li>
+            <li><a href="index.html#pic3">About</a></li>
+            <li><a href="index.html#pic4">Contact</a></li>
+            <li><a href="index.html#pic5">Resume</a></li>
+            
+        </ul>
+        </nav>
+            </div>
+    </header>
+    <div id="pic1">
+    <div class="content">
+    <h1>Tony Lee</h1>
+        </div>
+    </div>
+    <div id="pic2">
+        <h2>Work</h2>
+    <div class="row">
+            <div class="column">
+        <img class="myImg" src="imgs/Companyad.jpg" alt="Company Advertisement" width=10%>
+        <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+            <div id="caption">This is art</div>
+            </div>
+        <img class="myImg" src="imgs/flower.gif" alt="Disintergrating Flower" width=10%>
+        <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+            <div id="caption">This is art</div>
+            </div>
+        <img class="myImg" src="imgs/MagazineCover.jpg" alt="Magazine Cover" width=10%>
+        <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+            <div id="caption">This is art</div>
+            </div>
+            <div class="column">
+        <img class="myImg" src="imgs/Magazine1.jpg" alt="Streetwear Magazine" width=10%>
+        <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+            <div id="caption">This is art</div>
+            </div>
+        <img class="myImg" src="imgs/Magazine3.jpg" alt="Streetwear Magazine" width=10%>
+        <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+            <div id="caption">This is art</div>
+            </div>
+        <img class="myImg" src="imgs/psuhmel.jpg" alt="Album Cover" width=10%>
+        <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+            <div id="caption">This is art</div>
+            </div>
+        </div>
+            <div class="column">
+        <img class="myImg" src="imgs/Screenshot_20161013-090436.png" alt="Infographic" width=10%>
+        <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+            <div id="caption">This is art</div>
+            </div>
+        <img class="myImg" src="imgs/PYpaaFph.jpeg" alt="Picture" width=10%>
+        <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+            <div id="caption">This is art</div>
+            </div>
+        <img class="myImg" src="imgs/Screenshot_20180117-180504.jpg" alt="Futura Poster" width=10%>
+        <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <img class="modal-content" id="img01">
+            <div id="caption">This is art</div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div id="pic3">
+    <div class="content">
+        <div class="about">
+        <h2>About</h2>
+        <p>My name is Tony Lee. I hope to one day work for a big fashion, streetwear, or lifestyle company where I can be apart of the design team. I want my portfolio and website to showcase what my style is as well as the way I think when it comes to designs. As of right now I am a web designer, coder, and graphic designer but I hope to learn video editing and animation as well. So far I have about three projects that I can showcase but am working on a couple more.</p>
+            </div>
+        </div>
+    </div>
+    <div id="pic4">
+    <div class="content">
+        <h3>Contact</h3>
+        <p>Email: tl.tonyilee@gmail.com</p>
+        <p>Phone: 917-257-2593</p>
+        </div>
+    </div>
+    <div id="pic5">
+    <div class="content">
+        <h2>Resume</h2>
+        <img src="imgs/Tony%20Lee%20Resume.png" alt="Resume" width="50%">
+        </div>
+    </div>
+    <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+    </body>
+        </div>
+    <div class="footer">
+  <p>&copy Tony Lee</p>
+</div>
+</html>
